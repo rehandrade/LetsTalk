@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+<style>
+
+body {
+  background-color: #FFD3F5;
+  padding-top: 10vh;
+  background-size: cover;
+  background-position-y: -150px;
+}
+
+#bemvindo-container {
+  background: #C5A3DF;
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+  padding: 30px;
+  margin-top: 10vh;
+  border-radius: 5px;
+  text-align: center;
+  font-family: Times New Roman, Times, serif;
+}
+
+input {
+    border-bottom: 2px solid #080808;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+input:focus {
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+input[type="submit"] {
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 30px;
+  cursor: pointer;
+  color: rgb(186, 182, 187);
+  background-color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: #1B223C;
+  transition: .5s;
+}
+
+a {
+  background-color: #1B223C;
+  transition: .5s;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 30px;
+  cursor: pointer;
+  color: rgb(186, 182, 187);
+  font-weight: bold;
+  border-bottom: 2px solid #080808;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+</style>
+  </head>
+  <body>
+    <script src="script.js"></script>
+
+    <body>
+      <div id="bemvindo-container">
+      <h1>Seja bem vindo ao Let's Talk!</h1>
+      <div>
+      <br>
+      <h2>O Let's Talk tem o objetivo de proporcionar um ambiente de conforto a respeito do período de distanciamento social no qual estamos vivendo nos ultimos meses.</h2>
+      <div>
+      <br>
+      <h4>Registre suas experiências:</h4>
+      
+	  <a class='input' href="login" style="color: #FFFFFF; text-decoration: none;">LOGIN</a>
+      <a class='input'href="cadastro" style="color: #FFFFFF; text-decoration: none;">CADASTRE-SE</a>
+
+  </body>
+</html>

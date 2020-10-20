@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Informações Pesoais</title>
+  <link rel="stylesheet" href="css/hover.css" media="all">
+  <link rel="stylesheet" href="styles.css">
+
+<style>
+
+body {
+	background-color: #FFD3F5;
+  padding-top: 10vh;
+  background-image: url('');
+  background-size: cover;
+  background-position-y: center;
+  text-align: center;
+}
+
+</style>
+
+</html>
+</head>
+  <head>
+    
+    <center>
+      <img src="https://i.imgur.com/sndlFCy.png" height=200 width=200 >
+    </center>
+     <br>
+
+    <style>
+
+  * {
+      margin: 15px;
+      padding: 5px;
+      box-sizing: border-box;
+      font-family: Times New Roman, Times, serif;
+      color: #000000;
+      border: ;
+      }
+
+    body {
+      background-size: cover;
+      background-position-y: -200px;
+      }
+
+    textarea:focus, input:focus{
+      outline: none;
+      }
+
+    a {
+      font-size: .8rem;
+      }
+
+    a:hover {
+      color: rgba(0, 0, 0, 0);
+      }
+
+  .mainmenubtn {
+    background-color: #75399b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 20px 25px;
+    margin-top:-25px;
+    font-family: Times New Roman, Times, serif;
+    }
+
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    }
+
+    .dropdown-child {
+    display: none;
+    background-color: black;
+    min-width: 200px;
+    }
+
+    .dropdown-child a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+    }
+
+    .dropdown:hover .dropdown-child {
+    display: block;
+    }
+</style>
+    
+    <body>
+      <div class="dropdown">
+      <button class="mainmenubtn">Menu</button>
+      <div class="dropdown-child">
+      <a href="http://letstalk-dweb.vitoriaismael.repl.co/home">Home</a>
+      <a href="http://letstalk-dweb.vitoriaismael.repl.co/perfil/1">Perfil</a>
+      <a href="http://letstalk-dweb.vitoriaismael.repl.co/config">Configurações</a>
+      <a href="https://letstalk-dweb.vitoriaismael.repl.co/"'>sair</a>
+      </div>
+      </div>
+
+    </body>
+</head>
+
+<br>
+<br>
+<br>
+<head>
+
+  <style>
+
+  .mainconfbtn{
+      background-color: silver;
+      color: black;
+      border: none;
+      cursor: pointer;
+      padding:10px 10px;
+      margin-top:20px;
+      font-family: Times New Roman, Times, serif;
+    }
+
+.informations-container h2{
+  border: 10px solid #75399B;
+  font-family: Times New Roman, Times, serif;
+  font-size: 1.6rem;
+  border-radius: 8px
+}
+  
+  </style>
+
+  <body>
+    
+	<div class="informations-container">
+    
+	  <h2>Alterações de Informações Pessoais</h2><br><br><br>
+    
+	  <form id='register-form' action="" method="POST">
+    
+          {{ form.csrf_token }}
+    
+          <div class="form">
+            <label>EMAIL</label><br><br><br>
+            {{ form.email(class="form-control", size=47) }}
+          </div><br><br><br>
+
+		  <div class="form">
+            <label>NOME DE USUARIO</label><br><br><br>
+            {{ form.username(class="form-control", size=47) }}
+          </div><br><br><br>
+
+          <div class="form">
+            <label>SENHA</label><br><br><br>
+            {{ form.password(class="form-control", size=47) }}
+          </div><br><br><br>
+          
+          <input href="{{ url_for('config', id=user.id) }}" type="submit" value="Confirmar Alterações">
+          
+        </form>
+
+    </div>
+  </body>
+</head>
+</html>
